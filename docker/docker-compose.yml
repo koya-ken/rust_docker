@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  rust:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: local-rust:1.71.0-bullseye
+    volumes:
+      - "../:/workspace"
+    tty: true
